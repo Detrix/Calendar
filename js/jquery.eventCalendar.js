@@ -129,9 +129,12 @@
 				if (!desc.find('a').size()) {
 					var eventUrl = $(this).attr('href');
 					var eventTarget = $(this).attr('target');
-
-					// create a button to go to event url
-					desc.append('<a href="' + eventUrl + '" target="'+eventTarget+'" class="bt">'+eventsOpts.locales.txt_GoToEventUrl+'</a>');
+                    // create a button to go to event url
+                    if(eventUrl){
+                       desc.append('<a href="' + eventUrl + '" target="'+eventTarget+'" class="bt">'+eventsOpts.locales.txt_GoToEventUrl+'</a>');
+                       } 
+					
+					
 				}
 
 				if ( desc.is(':visible') ) {

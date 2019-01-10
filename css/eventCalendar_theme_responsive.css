@@ -221,6 +221,7 @@
 			font-style:normal;
 		}
 		.eventCalendar-list li time small {
+            display: none;
 			font-size:10px;
 			float:left;
 			background-color:#807E7E;
